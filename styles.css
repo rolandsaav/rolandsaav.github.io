@@ -1,7 +1,9 @@
-html, body {
+html,
+body {
   margin: 0px;
   height: 100%;
 }
+
 #container {
   height: 100%;
   outline: solid red 1px;
@@ -9,4 +11,9 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.half {
+  flex-grow: 1;
 }
