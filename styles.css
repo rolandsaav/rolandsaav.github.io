@@ -6,13 +6,14 @@ body {
 
 #container {
   width: inherit;
-  overflow-x: scroll;
-  height: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
   background-color: white;
+  outline: solid black 1px;
   color: black;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   font-family: "Open Sans", sans-serif;
 }
@@ -21,9 +22,8 @@ body {
 }
 
 #left {
-  outline: 1px solid red;
   padding-left: 15px;
-  width: 50%;
+  min-width: 50vw;
 }
 #titlebox {
   font-size: 8vh;
@@ -39,12 +39,12 @@ body {
 }
 
 #right {
-  width: 50%;
-  outline: 1px solid red;
+  min-width: 80vw;
   display: grid;
-  gap: 1rem;
-  grid-template-rows: repeat(2, 200px);
-  grid-template-columns: repeat(8, 200px);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 15vw);
+  grid-auto-columns: 15vw;
+  gap: 1vw;
 }
 
 .box {
