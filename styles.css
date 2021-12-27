@@ -7,7 +7,7 @@ body {
 #container {
   height: 100%;
   background-color: black;
-  color: #FFFBFE;
+  color: #fffbfe;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -20,22 +20,18 @@ body {
 }
 
 #left {
-  margin-left: 15px;
+  padding-left: 15px;
 }
-#namebox {
-  display: flex;
-  font-size: xx-large;
-}
-
-#bigR {
-  color: #90fcf9;
-  font-weight: 900;
-  text-shadow: -3px 0px #ED254E;
-}
-
-#bigS {
-  color: #ED254E;
-  font-weight: 900;
-  text-shadow: -2px 0px #90fcf9;
+#titlebox {
   
+  font-size: xx-large;
+  color: black;
+  width: fit-content;
+}
+
+#attributes {
+  display: flex;
+  font-size: large;
+  justify-content: space-evenly;
+  text-align: center;
 }
