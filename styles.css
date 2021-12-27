@@ -55,3 +55,18 @@ body {
   background-color: #ed254e;
   font-size: 3rem;
 }
+
+.box:hover {
+  animation: hovertest;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hovertest {
+  0% {
+  }
+
+  100% {
+    background: linear-gradient(rgb(220, 220, 220), rgb(40, 40, 40));
+  }
+}
