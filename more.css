@@ -25,3 +25,17 @@
 .shadow {
     box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
 }
+
+.nav {
+    padding: 1vh 0;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3vh;
+    font-family: "Open Sans";
+}
+
+.nav-button {
+    text-decoration: none;
+}

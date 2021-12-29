@@ -34,7 +34,8 @@ body {
   text-align: center;
   width: max-content;
   background-color: #ed254e;
-  padding: 0 1vw 0 1vw;
+  padding: 5px 10px;
+  box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
 }
 
 #title {
@@ -44,14 +45,21 @@ body {
 #titlebox {
   font-size: 8vh;
   color: black;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #attributes {
   font-size: 4vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
+}
+
+#attributes > h2{
+  padding: 5px 10px;
+  box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
 }
 
 .content-grid {

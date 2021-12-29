@@ -3,4 +3,10 @@ window.addEventListener('wheel', (e) => {
     document.getElementById("container").scrollLeft += e.deltaY;
 })
 
+let navbuttons = document.getElementsByClassName("nav-button");
 
+function navButtonClick(e)
+{
+    e.preventDefault();
+    
+}
