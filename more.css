@@ -19,4 +19,9 @@
     text-align: center;
     line-height: 8vh;
     font-weight: 400;
+    box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
   }
+
+.shadow {
+    box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
+}
