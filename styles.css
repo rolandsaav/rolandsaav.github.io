@@ -40,7 +40,6 @@ body {
 
 #title {
   margin-left: 15px;
-  
 }
 #titlebox {
   font-size: 8vh;
@@ -57,7 +56,7 @@ body {
   text-align: center;
 }
 
-#attributes > h2{
+#attributes > h2 {
   padding: 5px 10px;
   box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
 }
@@ -65,7 +64,7 @@ body {
 .content-grid {
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: repeat(2, 15vw);
+  grid-template-rows: repeat(2, 30vh);
   grid-auto-columns: min-content;
   gap: 1vw;
 }
@@ -77,14 +76,13 @@ body {
 }
 
 .box {
-  width: 15vw;
+  width: 30vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 3rem;
-  z-index: 3;
   box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
 }
 
