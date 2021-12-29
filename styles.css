@@ -6,7 +6,7 @@ body {
 
 #container {
   width: inherit;
-  overflow-x: hidden;
+  overflow-x: scroll;
   height: 100vh;
   width: 100vw;
   background-color: white;
@@ -18,10 +18,19 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.half {
+#container::-webkit-scrollbar {
+  opacity: 0%;
 }
 
-#left {
+#container::-webkit-scrollbar-thumb {
+  background-color: #ed254e;
+}
+
+#container::-webkit-scrollbar-button {
+  background-color: #5bc0eb;
+}
+
+#title {
   padding-left: 15px;
   min-width: 50vw;
 }
@@ -38,22 +47,29 @@ body {
   text-align: center;
 }
 
-#right {
-  min-width: 80vw;
+.content-grid {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, 15vw);
-  grid-auto-columns: 15vw;
+  grid-auto-columns: min-content;
   gap: 1vw;
 }
 
+#extension {
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: solid greenyellow 2px;
+}
+
 .box {
+  width: 15vw;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #ed254e;
   font-size: 3rem;
+  z-index: 3;
 }
 
 .box:hover {
@@ -67,6 +83,40 @@ body {
   }
 
   100% {
-    background: linear-gradient(rgb(220, 220, 220), rgb(40, 40, 40));
+    background: #5bc0eb;
   }
 }
+
+.videocont {
+  opacity: 0;
+  width: auto;
+  height: 100%;
+}
+
+.videobox {
+  outline: solid black 1px;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+.videobox:hover {
+  animation: hide 500ms 1s forwards;
+}
+
+@keyframes reveal {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes hide {
+  100% {
+    opacity: 0%;
+  }
+}
+#content {
+  display: flex;
+  margin-right: 10vh;
+}
+
+

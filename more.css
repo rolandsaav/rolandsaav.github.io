@@ -1,0 +1,22 @@
+.education {
+    background-color: #5BC0EB;
+}
+
+.music {
+    background-color: #FDE12D;
+}
+
+.coding {
+    background-color: #9046cf;
+}
+
+.banner {
+    width: auto;
+    margin-right: 1vw;
+    margin-left: 20vh;
+    writing-mode: vertical-lr;
+    font-size: 6vh;
+    text-align: center;
+    line-height: 8vh;
+    font-weight: 400;
+  }
