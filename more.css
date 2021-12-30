@@ -12,8 +12,7 @@
 
 .banner {
     width: auto;
-    margin-right: 1vw;
-    margin-left: 20vh;
+    
     writing-mode: vertical-lr;
     font-size: 6vh;
     text-align: center;
@@ -42,6 +41,7 @@
 
 @media (orientation: portrait) {
     .banner {
+        font-size: 8vw;
         width: 71vw;
         writing-mode: horizontal-tb;
         margin: unset;
@@ -49,5 +49,6 @@
 
     .nav{
         position: sticky;
+        font-size: 3vw
     }
 }
