@@ -5,12 +5,10 @@ body {
 }
 
 #container {
-  width: inherit;
   overflow-x: scroll;
   height: 100vh;
   width: 100vw;
   background-color: white;
-  outline: solid black 1px;
   color: black;
   display: flex;
   flex-direction: row;
@@ -132,4 +130,50 @@ body {
 #content {
   display: flex;
   margin-right: 10vh;
+  width: 100%;
+}
+
+@media (orientation: portrait) {
+  #container {
+    flex-direction: column;
+    overflow-x: hidden;
+    outline: solid rgb(189, 189, 189) 2px;
+    width: auto;
+    align-items: center;
+    
+  }
+
+  #content {
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .content-grid {
+    grid-auto-flow: row;
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 33vw);
+    grid-auto-columns: unset;
+    grid-auto-rows: unset;
+    gap: 5vw;
+    margin: 5vw 0 10vw 0;
+  }
+
+  #title {
+    margin: 10vh 0vh;
+  }
+
+  .box {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .videobox {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    overflow-y: hidden;
+  }
 }

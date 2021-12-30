@@ -39,3 +39,15 @@
 .nav-button {
     text-decoration: none;
 }
+
+@media (orientation: portrait) {
+    .banner {
+        width: 71vw;
+        writing-mode: horizontal-tb;
+        margin: unset;
+    }
+
+    .nav{
+        position: sticky;
+    }
+}
