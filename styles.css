@@ -1,193 +1,126 @@
-html,
-body {
-  margin: 0px;
-  height: 100%;
-}
-
-#container {
-  overflow-x: scroll;
-  height: 100vh;
-  width: 100vw;
-  background-color: white;
-  color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-}
-
-#container::-webkit-scrollbar {
-  opacity: 0%;
-}
-
-#container::-webkit-scrollbar-thumb {
-  background-color: #ed254e;
-}
-
-#container::-webkit-scrollbar-button {
-  background-color: #5bc0eb;
-}
-
-#name {
-  text-align: center;
-  width: max-content;
-  background-color: #ed254e;
-  padding: 5px 10px;
-  box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
-}
-
-#title {
-  margin-left: 15px;
-}
-#titlebox {
-  font-size: 8vh;
-  color: black;
+/*TODO take padding off main content and put on individual items for section backgrounds
+*/
+.main {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-#attributes {
-  font-size: 4vh;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-
-#attributes > h2 {
-  padding: 5px 10px;
-  box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
-}
-
-.content-grid {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(2, 30vh);
-  grid-auto-columns: min-content;
-  gap: 1vw;
-}
-
-#extension {
-  padding-left: 10px;
-  padding-right: 10px;
-  outline: solid greenyellow 2px;
-}
-
-.box {
-  width: 30vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 3rem;
-  box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
 }
 
-.box:hover {
-  animation: hovertest;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
+body::-webkit-scrollbar{
+  display: none;
 }
 
-@keyframes hovertest {
-  0% {
-  }
-
-  100% {
-    background: #5bc0eb;
-  }
-}
-
-.videocont {
-  opacity: 0;
-  width: auto;
-  height: 100%;
-}
-
-.videobox {
-  outline: solid black 1px;
-  height: 100%;
-  aspect-ratio: 16/9;
-  box-shadow: 5px 5px 2px 1px rgb(50, 50, 50);
-}
-
-.videobox:hover {
-  animation: hide 500ms 1s forwards;
-}
-
-@keyframes reveal {
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes hide {
-  100% {
-    opacity: 0%;
-  }
-}
-#content {
+.content {
+  background-color: white;
+  width: 1000px;
   display: flex;
-  margin-right: 10vh;
-  gap: 1vw;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  box-shadow: 0px 0 10px rgb(194, 194, 194);
 }
 
-@media (orientation: portrait) {
-  #container {
-    flex-direction: column;
-    overflow-x: hidden;
-    outline: solid rgb(189, 189, 189) 2px;
-    width: auto;
-    align-items: center;
-    
-  }
+.content::-webkit-scrollbar{
+  opacity: 0;
+}
 
-  #content {
-    flex-direction: column;
-    margin-right: 0;
-    align-items: center;
-    
-  }
 
-  .content-grid {
-    grid-auto-flow: row;
-    grid-template-rows: unset;
-    grid-template-columns: repeat(2, 33vw);
-    grid-auto-columns: unset;
-    grid-auto-rows: unset;
-    gap: 5vw;
-    margin: 5vw 0 10vw 0;
-  }
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
 
-  #title {
-    margin: 10vh 0vh;
-  }
+h2 {
+  font-size: 45px;
+}
 
-  #titlebox {
-    font-size: 9vw;
-  }
+h3 {
+  font-size: 30px;
+}
 
-  #name {
-    font-size: 9vw;
-  }
+h4 {
+  font-size: 20px;
+}
 
-  #attributes {
-    font-size: 5vw;
-    
-  }
+.title {
+  width: 100%;
+  
+  padding-top: 150px;
+  text-align: center;
+  line-height: normal;
 
-  .box {
-    width: 33vw;
-    height: 33vw;
-  }
+}
 
-  .videobox {
-    width: 100%;
-    height: auto;
-  }
+.subtitle {
+  margin: auto;
+  text-align: center;
+  line-height: normal;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60%;
+  background-color: blueviolet;
+  width: 100%;
+  color:white;
+}
 
-  body {
-    overflow-y: hidden;
-  }
+
+.carousel {
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  overflow-x: scroll;
+  height: auto;
+  gap: 50px;
+}
+
+.carousel::-webkit-scrollbar {
+  width: auto;
+  padding-top: 100px;
+}
+.carousel::-webkit-scrollbar-thumb {
+  background: rgb(0, 162, 255);
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: white;
+}
+
+
+.carousel iframe {
+  aspect-ratio: 16/9;
+  width: 400px;
+}
+
+.header{
+  padding: 20px 0;
+}
+
+.display {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 35px;
+  width: 75%;
+}
+
+.display img {
+  aspect-ratio: 1/1;
+  height: 100px;
+}
+
+#skills{
+  width: 100%;
+  background-color: blueviolet;
+  padding: 50px 0;
+  margin: 50px 0;
+  color: white;
 }
