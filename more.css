@@ -12,7 +12,6 @@
 
 .banner {
     width: auto;
-    margin-right: 1vw;
     margin-left: 20vh;
     writing-mode: vertical-lr;
     font-size: 6vh;
@@ -38,6 +37,31 @@
 
 .nav-button {
     text-decoration: none;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60vw;
+    gap: 2vw;
+    ;
+}
+
+.block-image {
+    aspect-ratio: 1/1;
+    height: 20vh;
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    outline: solid black 1px;
+    height: fit-content;
 }
 
 @media (orientation: portrait) {

@@ -130,7 +130,7 @@ body {
 #content {
   display: flex;
   margin-right: 10vh;
-  width: 100%;
+  gap: 1vw;
 }
 
 @media (orientation: portrait) {
@@ -147,6 +147,7 @@ body {
     flex-direction: column;
     margin-right: 0;
     align-items: center;
+    
   }
 
   .content-grid {
