@@ -1,13 +1,16 @@
 /*TODO take padding off main content and put on individual items for section backgrounds
 */
+
+/*TODO make title screen fixed pixel height for resize*/
 .main {
-  background-color: rgb(248, 248, 248);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+  background: linear-gradient(0deg, rgb(102, 102, 255), #ff3f3f);
+  color: white
 }
 
 body::-webkit-scrollbar{
@@ -15,13 +18,10 @@ body::-webkit-scrollbar{
 }
 
 .content {
-  background-color: white;
-  width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 100px;
-  box-shadow: 0px 0 10px rgb(194, 194, 194);
 }
 
 .content::-webkit-scrollbar{
@@ -31,11 +31,12 @@ body::-webkit-scrollbar{
 
 h1 {
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 45px;
+  padding: 25px 0;
 }
 
 h3 {
@@ -44,28 +45,34 @@ h3 {
 
 h4 {
   font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .title {
+  color: white;
   width: 100%;
-  
-  padding-top: 150px;
   text-align: center;
   line-height: normal;
-
+  height: 20vh;
+  padding: 40vh 0;
+  
 }
 
 .subtitle {
   margin: auto;
   text-align: center;
   line-height: normal;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 60%;
-  background-color: blueviolet;
-  width: 100%;
+  width: 100vw;
+
+  padding: 50px 0;
   color:white;
 }
 
@@ -86,11 +93,11 @@ h4 {
   padding-top: 100px;
 }
 .carousel::-webkit-scrollbar-thumb {
-  background: rgb(0, 162, 255);
+  background: rgb(255, 255, 255);
 }
 
 .carousel::-webkit-scrollbar-track {
-  background: white;
+  display: none;
 }
 
 
@@ -100,7 +107,7 @@ h4 {
 }
 
 .header{
-  padding: 20px 0;
+  padding-bottom: 50px;
 }
 
 .display {
@@ -119,7 +126,6 @@ h4 {
 
 #skills{
   width: 100%;
-  background-color: blueviolet;
   padding: 50px 0;
   margin: 50px 0;
   color: white;
