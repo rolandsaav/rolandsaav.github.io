@@ -1,77 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Roland Saavedra</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/reset.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/wave.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/more.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <script src="/main.js"></script>
+    <script src="script.js" type="text/javascript" defer></script>
+    <title>Roland Saavedra</title>
 </head>
 <body>
-    <div class="nav">
-        <a class="nav-button" href="">Coding</a>
-        <a class="nav-button" href="">Music</a>
-        <a class="nav-button" href="">Education</a> 
-        <a class="nav-button" href="">About</a>
-        <a class="nav-button" href="" onclick="">Contact</a>
+    <div class="navbar" id="nav">
+        <button class="navBtn" onclick="scrollHome();">Home</button>
+        <button class="navBtn" onclick="scrollAbout();">About</button>
+        <button class="navBtn" onclick="scrollProjects();">Projects</button>
+        <button class="navBtn" onclick="scrollContact();">Contact</button>
     </div>
-    <div id="container">
-        <div id="title">
-            <div id="titlebox">
-                <h1 id="name">Roland Saavedra</h1>
-                
-                <div id="attributes">
-                    <h2 style="background-color: #5BC0EB; ">Student</h2>
-                    <h2 style="background-color: #FDE12D;">Musician</h2>
-                    <h2 style="background-color: #9046cf;">Coder</h2>
-                </div>
+    <div class="main">
+        <div class="intro">
+            <div class="title">
+                <h1>Roland</h1>
+                <h2>Saavedra</h2>
+                <h3>Likes To Build Things</h3>
             </div>
-            
+            <img src="/images/IMG_4101.PNG">
         </div>
+        <div class="bio" id="about">
+            <p>
+                Roland Saavedra is a 17 year old programmer and musician from Atlanta, Georgia. He is a senior at the Gwinnett School of Mathematics, Science, and Technology. He loves to learn and likes to build apps, games, and websites, and compete in hackathons.
+            </p>
+        </div>
+        <div class="skills">
+            <h2  class="secHeader">SKILLS</h2>
+            <div class="skillDisplay">
+                <img src="images/JavaScript.svg" alt="">
+                <img src="images/html5.svg" alt="">
+                <img src="images/CSS3_logo.svg" alt="">
+                <img src="images/firebase.svg" alt="">
+                <img src="images/React.svg" alt="">
+                <img src="images/java-seeklogo.com.svg" alt="">
+                <img src="images/csharp.svg" alt="">
+                <img src="images/Unity.svg" alt="">
+                <img src="images/C++.svg" alt="">
+                <img src="images/Python.svg" alt="">
+                <!-- add blender-->
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h2  class="secHeader">Projects</h2>
+            <div class="project-display">
+                
+                <div class="project-card">
+                    <div class="project-header project-image">
+                        <img src="/images/flutterhackbanner.png">
+                    </div>
+                    <div class="project-body">I'm working on my submission for this Hackathon. When I'm done, I will have created an augmented reality tile sliding game.</div>
+                    <div class="project-footer">Started 2/1/2022</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header project-image">
+                        <img src="/images/survivalgame.jpg">
+                    </div>
+                    <div class="project-body">I'm making a multiplayer, survival game, similar to DayZ. My inspiration comes from the Apocalypse Rising series on Roblox.</div>
+                    <div class="project-footer">Started 1/5/2022</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header project-image">
+                        <img src="/images/PodracerAnakin.jpg">
+                    </div>
+                    <div class="project-body">I'm making a VR Pod Racing game, set in the Star Wars Universe. </div>
+                    <div class="project-footer">Started 1/25/2022</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h2  class="secHeader">Contact</h2>
+            <div class="contactDisplay">
+                <div class="contactContent">
+                    <div class="contactMessage">
+                        <p>I love working on projects and learning new things. If you have any questions or would like to work with me, leave a message!
+                        </p>
+                    </div>                  
+                    <form class="contactForm">
+                        <label id="name" for="name">Name
+                            <input id="name" type="text" placeholder="John Smith">
+                        </label>
+                        
 
-        <div id="content">
-        <div class="banner coding">
-            CODING
+                        <label id="email" for="email">Email
+                            <input id="email" type="text" placeholder="email@email.com">
+                        </label>
+                        
+                        <label id="message"  for="message">Message
+                            <textarea rows="5" cols="20" maxlength="150" placeholder="leave a message" id="message"></textarea>
+                        </label>
+                        
+                        <input id="submit" type="submit" id="submit">
+                    </form>
+                </div>
+                <img src="/images/IMG_4098.PNG" class="contactImg">
+            </div>
         </div>
-        <div class="content-grid">
-            <iframe class="videobox" src="https://www.youtube-nocookie.com/embed/PgIjPwF53fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <iframe class="videobox" src="https://www.youtube.com/embed/BHvIM2m4myw" title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="videobox" src="https://www.youtube.com/embed/btgmxYoFeWg" title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="videobox"src="https://www.youtube.com/embed/PUCvnLcgXzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="videobox"src="https://www.youtube.com/embed/1xrchKgoMtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="banner music">
-            MUSIC
-        </div>
-        <div class="content-grid">
-            <div class="box music"></div>
-            <div class="box music"></div>
-            <div class="box music"></div>
-            <div class="box music"></div>
-            <div class="box music"></div>
-            <div class="box music"></div>
-        </div>
+        <div class="footer">
 
-        <div class="banner education">
-            EDUCATION
         </div>
-        <div class="content-grid">
-            <div class="box education"></div>
-            <div class="box education"></div>
-            <div class="box education"></div>
-            <div class="box education"></div>
-            <div class="box education"></div>
-            <div class="box education"></div>
-        </div>
-        </div>
-
     </div>
-        
-    
 </body>
 </html>
